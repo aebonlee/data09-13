@@ -1,0 +1,13 @@
+﻿예시 데이터 — 가상의 CAN DBC 정리표입니다. 실제 차량 사양이 아닙니다.
+
+Msg ID,메시지 이름,송신 ECU,주기(ms),DLC,신호 이름,시작 비트,길이(bit)
+0x100,EX_ENG_STATUS,EX_EMS,10,8,EX_EngSpeed,0,16
+,,,,,EX_EngTemp,16,8
+0x120,EX_TCU_GEAR,EX_TCU,20,8,EX_GearPos,0,4
+0x1A0,EX_BRAKE_PRESS,EX_ESC,10,8,EX_BrkPress,0,12
+,,,,,EX_BrkSwitch,12,1
+0x200,EX_STEER_ANGLE,EX_MDPS,10,8,EX_StrAngle,0,16
+0x2B0,EX_BODY_LAMP,EX_BCM,100,4,EX_HeadLamp,0,2
+0x316,EX_VEH_SPEED,EX_ESC,20,8,EX_VehSpeed,0,16
+0x3F0,EX_DOOR_STATE,EX_BCM,100,2,EX_DoorFL,0,1
+0x500,EX_DIAG_REQ,EX_TESTER,,8,EX_DiagData,0,64

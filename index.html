@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CAN 로그 검증 — DBC 기준 유효성 검증 보고서</title>
+  <meta name="description" content="DBC 엑셀과 실차 TRC 로그를 브라우저에서 읽어 ID 언매칭·전송 주기·DLC 불일치를 검사하고 보고서로 내보내는 도구(1단계)">
+  <meta name="robots" content="noindex">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">본문으로 건너뛰기</a>
+  <header class="site-header">
+    <div class="inner header-inner">
+      <a class="brand" href="#/dbc">
+        <span class="brand-name">CAN 로그 검증</span>
+        <span class="brand-sub">DBC 기준 유효성 검증 보고서 · 1단계</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="주 메뉴"></nav>
+    </div>
+  </header>
+
+  <div id="sampleBanner" class="sample-banner" hidden></div>
+
+  <main id="main" class="inner main" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="inner">1단계 · 파일은 이 브라우저 안에서만 읽고 계산합니다. 외부로 보내지 않습니다.</div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+  <!-- 로컬 파일(file://)로 열어도 돌도록 module 이 아닌 일반 스크립트로 불러옵니다 -->
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="js/logic.js"></script>
+  <script src="js/sample-data.js"></script>
+  <script src="js/store.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
